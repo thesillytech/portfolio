@@ -8,12 +8,19 @@ function Home() {
   const [count, setCount] = useState(0)
 
   return (
-    <Container maxWidth="sm" >
+    <Container maxWidth="lg" sx={css.Container}>
       <Header />
       <Homepage />
     </Container>
   )
 }
-
+ 
 export default Home
 
+const css = {
+  Container: {
+    '&.MuiContainer-root': {
+      padding: '0px'
+    }
+  }
+}

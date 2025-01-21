@@ -7,32 +7,30 @@ import * as React from 'react';
 
 function Header () {
     return (
-        <Box sx={css.Box}>
-            <AppBar component="nav" sx={css.Appbar}>
-                <Toolbar>
-                <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{ flexGrow: 1, display: { sm: 'block' } }}
-                >
-                    Porfolio
-                </Typography>
-                <Box sx={{ display: { sm: 'block' } }}>
-                    <Button sx={{ color: '#fff' }}>
-                        Projects
-                    </Button>
+        <AppBar position="sticky" conmponent="nav" sx={css.Appbar}>
+            <Toolbar>
+            <Typography
+                variant="h6"
+                component="div"
+                sx={{ flexGrow: 1, display: { sm: 'block' } }}
+            >
+                Porfolio
+            </Typography>
+            <Box sx={{ display: { sm: 'block' } }}>
+                <Button sx={{ color: '#fff' }}>
+                    Projects
+                </Button>
 
-                    <Button sx={{ color: '#fff' }}>
-                        About
-                    </Button>
+                <Button sx={{ color: '#fff' }}>
+                    About
+                </Button>
 
-                    <Button sx={{ color: '#fff' }}>
-                        Contact
-                    </Button>
-                </Box>
-                </Toolbar>
-            </AppBar>
-        </Box>
+                <Button sx={{ color: '#fff' }}>
+                    Contact
+                </Button>
+            </Box>
+            </Toolbar>
+        </AppBar>
     )
 }
 
@@ -41,7 +39,8 @@ export default Header
 const css = {
     Appbar: {
         '&.MuiAppBar-root': {
-            backgroundColor: '#242424'
+            backgroundColor: '#242424',
+            padding: '20px'
         },
     },
 
