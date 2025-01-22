@@ -7,6 +7,7 @@ function Homepage () {
         <Grid size="auto" sx={css.Grid}>
             <Box>Hello, I'm <span style={css.name}>Sanil Khamkar</span>, a</Box>
             <Box>Web Developer.</Box>
+            <Box></Box>
         </Grid>
     )
 }

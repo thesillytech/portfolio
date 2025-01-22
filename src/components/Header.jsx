@@ -16,16 +16,16 @@ function Header () {
             >
                 Porfolio
             </Typography>
-            <Box sx={{ display: { sm: 'block' } }}>
-                <Button sx={{ color: '#fff' }}>
+            <Box sx={css.Box}>
+                <Button sx={css.Button}>
                     Projects
                 </Button>
 
-                <Button sx={{ color: '#fff' }}>
+                <Button sx={css.Button}>
                     About
                 </Button>
 
-                <Button sx={{ color: '#fff' }}>
+                <Button sx={css.Button}>
                     Contact
                 </Button>
             </Box>
@@ -45,6 +45,10 @@ const css = {
     },
 
     Box: {
-        display: 'flex'
+        display: { sm: 'block' },
+    }, 
+
+    Button: {
+        color: '#fff',
     }
 }
