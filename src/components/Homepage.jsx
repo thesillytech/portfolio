@@ -24,6 +24,6 @@ const css = {
     },
 
     name: {
-        color: '#29a3a3'
+        color: '#B0B0B0'
     }
 }
