@@ -1,16 +1,27 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import * as React from 'react'; 
+import * as React from 'react';
+
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
 
 function Header () {
     return (
         <Box sx={css.Box}>
-            <Box sx={css.line}></Box>
-                <Button sx={css.Button}>Home</Button>
-                <Button sx={css.Button}>Projects</Button>
-                <Button sx={css.Button}>About</Button>
-                <Button sx={css.Button}>Contact</Button>
-            <Box sx={css.line}></Box>
+          <List>
+            <ListItem disablePadding>
+              <ListItemButton sx={css.ListButton}>
+                <ListItemText><Box sx={css.line}></Box></ListItemText>
+                <ListItemText primary="Home" sx={css.Button}/>
+                <ListItemText primary="Projects"sx={css.Button} />
+                <ListItemText primary="About" sx={css.Button}/>
+                <ListItemText primary="Contact" sx={css.Button}/>
+                <ListItemText><Box sx={css.line}></Box></ListItemText>
+              </ListItemButton>
+            </ListItem>
+          </List>
         </Box>
     )
 }
@@ -26,21 +37,27 @@ const css = {
     },
 
     Box: {
-        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-    }, 
+    },
+
+    ListButton: {
+      textAlign: 'center',
+      '&.MuiListItemButton-root': {
+        paddingLeft: 0,
+        paddingRight: 0
+      }
+    },
 
     Button: {
         color: '#adad85',
         minWidth: '100',
-        margin: '20px',
+        margin: '10px',
         fontSize: '15px'
     },
 
     line: {
         height: '2px',
         backgroundColor: '#adad85',
-        width: '100%'
     }
 }
