@@ -7,7 +7,7 @@ function Homepage () {
         <>
             <Grid size="auto" sx={css.intro}>
                 <Box>Hello, I'm <span style={css.name}>Sanil Khamkar</span>, a</Box>
-                <Box>Web Developer..</Box>
+                <Box>Web Developer.</Box>
             </Grid>
 
             <Grid size="auto" sx={css.subintro}>
