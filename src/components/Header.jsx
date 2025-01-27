@@ -1,41 +1,17 @@
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import * as React from 'react'; 
 
 function Header () {
     return (
         <Box sx={css.Box}>
-            <Button sx={css.Button}>Projects</Button>
-            <Button sx={css.Button}>About</Button>
-            <Button sx={css.Button}>Contact</Button>
+            <Box sx={css.line}></Box>
+                <Button sx={css.Button}>Home</Button>
+                <Button sx={css.Button}>Projects</Button>
+                <Button sx={css.Button}>About</Button>
+                <Button sx={css.Button}>Contact</Button>
+            <Box sx={css.line}></Box>
         </Box>
-        // <AppBar position="sticky" conmponent="nav" sx={css.Appbar}>
-        //     <Toolbar>
-        //     <Typography
-        //         variant="h6"
-        //         component="div"
-        //         sx={{ flexGrow: 1, display: { sm: 'block' } }}
-        //     >
-        //         Porfolio
-        //     </Typography>
-        //     <Box sx={css.Box}>
-        //         <Button sx={css.Button}>
-        //             Projects
-        //         </Button>
-
-        //         <Button sx={css.Button}>
-        //             About
-        //         </Button>
-
-        //         <Button sx={css.Button}>
-        //             Contact
-        //         </Button>
-        //     </Box>
-        //     </Toolbar>
-        // </AppBar>
     )
 }
 
@@ -52,11 +28,19 @@ const css = {
     Box: {
         display: 'flex',
         justifyContent: 'center',
+        alignItems: 'center',
     }, 
 
     Button: {
-        color: '#B0B0B0',
+        color: '#adad85',
         minWidth: '100',
-        margin: '20px'
+        margin: '20px',
+        fontSize: '15px'
+    },
+
+    line: {
+        height: '2px',
+        backgroundColor: '#adad85',
+        width: '100%'
     }
 }

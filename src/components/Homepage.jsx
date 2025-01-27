@@ -4,26 +4,40 @@ import * as React from 'react';
 
 function Homepage () {
     return (
-        <Grid size="auto" sx={css.Grid}>
-            <Box>Hello, I'm <span style={css.name}>Sanil Khamkar</span>, a</Box>
-            <Box>Web Developer.</Box>
-            <Box></Box>
-        </Grid>
+        <>
+            <Grid size="auto" sx={css.intro}>
+                <Box>Hello, I'm <span style={css.name}>Sanil Khamkar</span>, a</Box>
+                <Box>Web Developer.</Box>
+            </Grid>
+
+            <Grid size="auto" sx={css.subintro}>
+                <Box>Crafting simple, design-driven web experiences with modern technologies.</Box>
+            </Grid>
+        </>
     )
 }
 
 export default Homepage
 
 const css = {
-    Grid: {
+    intro: {
         fontSize: '5rem',
-        padding: '20px',
         '@media screen and (max-width: 600px)': {
-            fontSize: '30px'
+            fontSize: '25px',
+            padding: '15px'
         }
     },
 
     name: {
-        color: '#B0B0B0'
+        color: '#adad85'
+    },
+
+    subintro: {
+        fontSize: '40px',
+        '@media screen and (max-width: 600px)': {
+            fontSize: '25px',
+            padding: '15px'
+        }
     }
+    
 }
