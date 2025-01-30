@@ -4,10 +4,12 @@ import Paper from '@mui/material/Paper';
 
 function about () {
     return (
-        <Box>
-            <Paper elevation={0} />
-            <Paper />
-            <Paper elevation={3} />
-        </Box>
+      <Box>
+        <Paper elevation={0} />
+        <Paper />
+        <Paper elevation={3} />
+      </Box>
     )
 }
+
+export default about

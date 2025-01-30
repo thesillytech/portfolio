@@ -4,7 +4,7 @@ import Homepage from './components/Homepage';
 import * as React from 'react';
 import { useState } from 'react'
 
-function home() {
+function Home() {
   const [count, setCount] = useState(0)
 
   return (
@@ -14,8 +14,8 @@ function home() {
     </Container>
   )
 }
-
-export default home
+ 
+export default Home
 
 const css = {
   Container: {

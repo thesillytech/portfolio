@@ -4,24 +4,24 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import Link from '@mui/material/Link';
+import about from  './../about.jsx'
 
 function Header () {
     return (
-        <Box sx={css.Box}>
-          <List>
-            <ListItem disablePadding>
-              <ListItemButton sx={css.ListButton}>
-                <ListItemText><Box sx={css.line}></Box></ListItemText>
-                <ListItemText primary="Home" sx={css.Button}/>
-                <ListItemText primary="Projects"sx={css.Button} />
-                <ListItemText primary="About" sx={css.Button}/>
-                <ListItemText primary="Contact" sx={css.Button}/>
-                <ListItemText><Box sx={css.line}></Box></ListItemText>
-              </ListItemButton>
-            </ListItem>
-          </List>
-        </Box>
+      <Box sx={css.Box}>
+        <List>
+          <ListItem disablePadding>
+            <ListItemButton sx={css.ListButton}>
+              <ListItemText><Box sx={css.line}></Box></ListItemText>
+              <ListItemText primary="Home" sx={css.Button} />
+              <ListItemText primary="Projects"sx={css.Button} />
+              <ListItemText primary="About" sx={css.Button} />
+              <ListItemText primary="Contact" sx={css.Button} />
+              <ListItemText><Box sx={css.line}></Box></ListItemText>
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Box>
     )
 }
 
@@ -30,14 +30,14 @@ export default Header
 const css = {
     Appbar: {
         '&.MuiAppBar-root': {
-            backgroundColor: '#242424',
-            padding: '20px'
+          backgroundColor: '#242424',
+          padding: '20px'
         },
     },
 
     Box: {
-        justifyContent: 'center',
-        alignItems: 'center',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
 
     ListButton: {
@@ -49,14 +49,14 @@ const css = {
     },
 
     Button: {
-        color: '#adad85',
-        minWidth: '100',
-        margin: '10px',
-        fontSize: '15px'
+      color: '#adad85',
+      minWidth: '100',
+      margin: '10px',
+      fontSize: '15px'
     },
 
     line: {
-        height: '2px',
-        backgroundColor: '#adad85',
+      height: '2px',
+      backgroundColor: '#adad85',
     }
 }
