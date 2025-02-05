@@ -30,14 +30,14 @@ export default Header
 const css = {
     Appbar: {
         '&.MuiAppBar-root': {
-            backgroundColor: '#242424',
-            padding: '20px'
+          backgroundColor: '#242424',
+          padding: '20px'
         },
     },
 
     Box: {
-        justifyContent: 'center',
-        alignItems: 'center',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
 
     ListButton: {
@@ -49,14 +49,14 @@ const css = {
     },
 
     Button: {
-        color: '#adad85',
-        minWidth: '100',
-        margin: '10px',
-        fontSize: '15px'
+      color: '#adad85',
+      minWidth: '100',
+      margin: '10px',
+      fontSize: '15px'
     },
 
     line: {
-        height: '2px',
-        backgroundColor: '#adad85',
+      height: '2px',
+      backgroundColor: '#adad85',
     }
 }
