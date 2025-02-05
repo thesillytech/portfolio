@@ -4,7 +4,7 @@ import Homepage from './components/Homepage';
 import * as React from 'react';
 import { useState } from 'react'
 
-function Home() {
+function Home () {
   const [count, setCount] = useState(0)
 
   return (
@@ -16,7 +16,7 @@ function Home() {
 }
  
 export default Home
-
+ 
 const css = {
   Container: {
     '&.MuiContainer-root': {
