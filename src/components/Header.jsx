@@ -1,10 +1,9 @@
-import Box from '@mui/material/Box';
-import * as React from 'react';
+import Box from '@mui/material/Box';  
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function Header () {
     return (
@@ -13,9 +12,13 @@ function Header () {
           <ListItem disablePadding>
             <ListItemButton sx={css.ListButton}>
               <ListItemText><Box sx={css.line}></Box></ListItemText>
-              <ListItemText primary="Home" sx={css.Button}/>
-              <ListItemText primary="Projects"sx={css.Button} />
-              <Link to="/about"><ListItemText primary="About" sx={css.Button}/></Link>
+              <ListItemText>
+                <Link to="/" sx={css.Button}>Home</Link>
+              </ListItemText>
+              <ListItemText primary="Projects" sx={css.Button} />
+              <ListItemText >
+                <Link to="/about" sx={css.Button}>About</Link>
+              </ListItemText>
               <ListItemText primary="Contact" sx={css.Button}/>
               <ListItemText><Box sx={css.line}></Box></ListItemText>
             </ListItemButton>
