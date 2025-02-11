@@ -3,7 +3,7 @@ import About from './about.jsx'
 import Home from './Home.jsx'
 
 
-export default function App () {
+function App () {
     return (
     <Router>
         <Routes>
@@ -14,4 +14,5 @@ export default function App () {
     )
 }
 
+export default App
 

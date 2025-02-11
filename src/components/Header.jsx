@@ -13,11 +13,11 @@ function Header () {
             <ListItemButton sx={css.ListButton}>
               <ListItemText><Box sx={css.line}></Box></ListItemText>
               <ListItemText>
-                <Link to="/" sx={css.Button}>Home</Link>
+                <Link to="/" style={css.Button}>Home</Link>
               </ListItemText>
               <ListItemText primary="Projects" sx={css.Button} />
               <ListItemText >
-                <Link to="/about" sx={css.Button}>About</Link>
+                <Link to="/about" style={css.Button}>About</Link>
               </ListItemText>
               <ListItemText primary="Contact" sx={css.Button}/>
               <ListItemText><Box sx={css.line}></Box></ListItemText>
@@ -52,7 +52,7 @@ const css = {
     },
 
     Button: {
-      color: '#adad85',
+      color: '#c3c39a',
       minWidth: '100',
       margin: '10px',
       fontSize: '15px'
@@ -60,6 +60,6 @@ const css = {
 
     line: {
       height: '2px',
-      backgroundColor: '#adad85',
+      backgroundColor: '#c3c39a',
     }
 }
