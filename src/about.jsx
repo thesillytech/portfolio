@@ -12,6 +12,7 @@ function About () {
 
         <Grid size="auto" sx={css.About}>
             <Paper elevation={24} sx={css.Paper}> 
+
                 {/* about section */}
                 <Box><span style={css.Headers}>ABOUT</span></Box>
                 <Box sx={css.Text}>
@@ -22,34 +23,75 @@ function About () {
                     I love crafting intuitive and engaging  web applications and websites designs for the front end while ensuring the back end is built for performance and usability.
                 </Box>
 
-                 {/* experience section */}
+                {/* experience section */}
                 <Box sx={{ marginTop: '20px' }}><span style={css.Headers}>EXPERIENCE</span></Box>
 
                 <Grid container spacing={2}>
-                    <Grid size={{ md: 3 }}>
-                        <Box sx={css.Year}>2019 - 2021</Box>
-                    </Grid>
+                    <Grid size={{ md: 3 }}><Box sx={css.Year}>2019 - 2021</Box></Grid>
 
-                    <Grid size={{ md: 6 }}>
-                        <Box sx={css.Text}>Web Developer</Box>
+                    <Grid size={{ md: 6 }} sx={{ mt: '10px'}}>
+                        <Box sx={css.Title}>Web Developer · South Dakota State University</Box>
                         <Box sx={css.Text}>Worked with the development team to build and maintain websites and web applications for the school</Box>
-                        <Box><Chip label="HTML" color="warning" sx={css.Chip}/></Box>
+                        <Box>
+                            <Chip label="Html & Css" color="warning" sx={css.Chip}/>
+                            <Chip label="Sql" color="warning" sx={css.Chip}/>
+                            <Chip label="Asp.net" color="warning" sx={css.Chip}/>
+                            <Chip label="C#" color="warning" sx={css.Chip}/>    
+                        </Box>
+
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={2}>
-                    <Grid size={{ md: 4 }}>
-                        <Box sx={css.Year}>2021 - PRESENT</Box>
-                    </Grid> 
+                <Grid container spacing={2} sx={{ marginTop: '20px' }}>
+                    <Grid size={{ md: 3 }}><Box sx={css.Year}>2021 - PRESENT</Box></Grid> 
 
-                    <Grid size={{ md: 4 }}>
-                        <Box sx={css.Year}></Box>
+                    <Grid size={{ md: 6 }} sx={{ mt: '10px' }}>
+                        <Box sx={css.Title}>Web Developer · JDS Industries </Box>
+                        <Box sx={css.Text}>Build and maintain websites, web applications, manage development platform, across the whole company. Work closely with cross-functional teams, including developers, designers and managers, to implement best practices in web development.</Box>
+                        <Box>
+                            <Chip label="Html & Css" color="warning" sx={css.Chip}/>
+                            <Chip label="Sql" color="warning" sx={css.Chip}/>
+                            <Chip label="Php" color="warning" sx={css.Chip}/>
+                            <Chip label="Javascript" color="warning" sx={css.Chip}/>  
+                            <Chip label="React" color="warning" sx={css.Chip}/>    
+                            <Chip label="Next.js" color="warning" sx={css.Chip}/>    
+                            <Chip label="Node.js" color="warning" sx={css.Chip}/>    
+                            <Chip label="m-Power" color="warning" sx={css.Chip}/>
+                        </Box>
+                    </Grid>
+                </Grid>
+
+                {/* interest section */}
+                <Box sx={{ marginTop: '20px' }}><span style={css.Headers}>INTERESTS</span></Box>
+
+                <Grid container spacing={2}>
+                    <Grid size={{ xs: 6, s: 3, md: 3 }}>
+                        <Box sx={css.Year}>Development</Box>
+                        <Box sx={css.Text}>Working on Projects</Box>
+                        <Box sx={css.Text}>Reading</Box>
+                    </Grid>
+
+                    <Grid size={{ xs: 6, s: 3, md: 3 }}>
+                        <Box sx={css.Year}>Watching</Box>
+                        <Box sx={css.Text}>Mr. Robot</Box>
+                        <Box sx={css.Text}>Blade Runner 2049</Box>
+                    </Grid>
+
+                    <Grid size={{ xs: 6, s: 3, md: 3 }}>
+                        <Box sx={css.Year}>Gaming</Box>
+                        <Box sx={css.Text}>Counter-Strike 2</Box>
+                        <Box sx={css.Text}>God of War</Box>
+                        <Box sx={css.Text}>Uncharted Series</Box>
+                    </Grid>
+
+                    <Grid size={{ xs: 6, s: 3, md: 3 }}>
+                        <Box sx={css.Year}>Sports</Box>
+                        <Box sx={css.Text}>Formula 1</Box>
+                        <Box sx={css.Text}>e-Sports</Box>
                     </Grid>
                 </Grid>
             </Paper>
         </Grid>
-        
-     
     </Container>
     )
 }
@@ -79,8 +121,14 @@ const css = {
 
     Headers: {
         color: '#c3c39a',
-        fontSize: '30px',
-        fontWeight: '400'
+        fontSize: '25px',
+        fontWeight: '400',
+    },
+
+    Title: {
+        fontSize: '20px',
+        color: '#c3c39a',
+        fontWeight: '400',
     },
 
     Text: {
@@ -90,30 +138,23 @@ const css = {
 
     Highlight: {
         color: '#c3c39a',
-        fontWeight: '400'
+        fontWeight: '400',
     }, 
 
     Year: {
         color: '#c3c39a',
         fontSize: '20px',
         marginTop: '10px',
-        fontWeight: '400'
+        fontWeight: '400',
     }, 
 
-    // Chip: {
-    //     background: '#c3c39a',
-    //     color: '#8f8f56',
-    //     fontWeight: '500'
-    // }
-
     Chip: {
-        background: '#c3c39a', // Subtle neon background color
-        color: '#4d4d33', // Darker color for text contrast
-        fontWeight: '500', // Slightly bold for emphasis
-        boxShadow: '0 0 5px #c3c39a, 0 0 5px #c3c39a', // Subtle neon glow effect
-        border: '1px solid #c3c39a', // Defines the chip with a soft border
-        padding: '0 10px', // Adjust internal spacing
-        borderRadius: '16px', // Ensure rounded corners
-        textTransform: 'uppercase', // Optional: make the text stand out
+        background: '#c3c39a', 
+        color: '#4d4d33', 
+        fontWeight: '500', 
+        boxShadow: '0 0 3px #c3c39a, 0 0 3px #c3c39a', 
+        border: '1px solid #c3c39a', 
+        borderRadius: '16px', 
+        marginRight: '10px'
     }
   }
