@@ -14,7 +14,7 @@ function About () {
             <Paper elevation={24} sx={css.Paper}> 
 
                 {/* about section */}
-                <Box><span style={css.Headers}>ABOUT</span></Box>
+                <Box sx={css.Headers}>ABOUT</Box>
                 <Box sx={css.Text}>
                     <span style={css.Highlight}>Greetings!</span> I'm Sanil, a Full Stack Web Developer based in United States.
                 </Box>
@@ -24,31 +24,30 @@ function About () {
                 </Box>
 
                 {/* experience section */}
-                <Box sx={{ marginTop: '20px' }}><span style={css.Headers}>EXPERIENCE</span></Box>
+                <Box sx={{ ...css.Headers, marginTop: '40px' }}>EXPERIENCE</Box>
 
                 <Grid container spacing={2}>
                     <Grid size={{ md: 3 }}><Box sx={css.Year}>2019 - 2021</Box></Grid>
 
-                    <Grid size={{ md: 6 }} sx={{ mt: '10px'}}>
+                    <Grid size={{ md: 6 }}>
                         <Box sx={css.Title}>Web Developer · South Dakota State University</Box>
                         <Box sx={css.Text}>Worked with the development team to build and maintain websites and web applications for the school</Box>
-                        <Box>
+                        <Box sx={{ marginTop: '5px' }}>
                             <Chip label="Html & Css" color="warning" sx={css.Chip}/>
                             <Chip label="Sql" color="warning" sx={css.Chip}/>
                             <Chip label="Asp.net" color="warning" sx={css.Chip}/>
                             <Chip label="C#" color="warning" sx={css.Chip}/>    
                         </Box>
-
                     </Grid>
                 </Grid>
 
-                <Grid container spacing={2} sx={{ marginTop: '20px' }}>
+                <Grid container spacing={2} sx={{ marginTop: '40px' }}>
                     <Grid size={{ md: 3 }}><Box sx={css.Year}>2021 - PRESENT</Box></Grid> 
 
-                    <Grid size={{ md: 6 }} sx={{ mt: '10px' }}>
+                    <Grid size={{ md: 6 }}>
                         <Box sx={css.Title}>Web Developer · JDS Industries </Box>
                         <Box sx={css.Text}>Build and maintain websites, web applications, manage development platform, across the whole company. Work closely with cross-functional teams, including developers, designers and managers, to implement best practices in web development.</Box>
-                        <Box>
+                        <Box sx={{ marginTop: '5px' }}>
                             <Chip label="Html & Css" color="warning" sx={css.Chip}/>
                             <Chip label="Sql" color="warning" sx={css.Chip}/>
                             <Chip label="Php" color="warning" sx={css.Chip}/>
@@ -62,7 +61,7 @@ function About () {
                 </Grid>
 
                 {/* interest section */}
-                <Box sx={{ marginTop: '20px' }}><span style={css.Headers}>INTERESTS</span></Box>
+                <Box sx={{ ...css.Headers, marginTop: '40px' }}>INTERESTS</Box>
 
                 <Grid container spacing={2}>
                     <Grid size={{ xs: 6, s: 3, md: 3 }}>
@@ -90,6 +89,7 @@ function About () {
                         <Box sx={css.Text}>e-Sports</Box>
                     </Grid>
                 </Grid>
+
             </Paper>
         </Grid>
     </Container>
@@ -123,6 +123,7 @@ const css = {
         color: '#c3c39a',
         fontSize: '25px',
         fontWeight: '400',
+        marginBottom: '20px'
     },
 
     Title: {
@@ -133,7 +134,6 @@ const css = {
 
     Text: {
         fontSize: '20px',
-        marginTop: '10px',
     }, 
 
     Highlight: {
@@ -144,7 +144,7 @@ const css = {
     Year: {
         color: '#c3c39a',
         fontSize: '20px',
-        marginTop: '10px',
+        // marginTop: '10px',
         fontWeight: '400',
     }, 
 
