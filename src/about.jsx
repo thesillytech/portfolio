@@ -20,28 +20,13 @@ function About () {
                 </Box>
 
                 <Box sx={css.Text}>
-                    I love crafting intuitive and engaging  web applications and websites designs for the front end while ensuring the back end is built for performance and usability.
+                    I love crafting intuitive and engaging designs for web applications and websites on the front end, while ensuring the back end is optimized for performance and usability.
                 </Box>
 
                 {/* experience section */}
                 <Box sx={{ ...css.Headers, marginTop: '40px' }}>EXPERIENCE</Box>
 
-                <Grid container spacing={2}>
-                    <Grid size={{ md: 3 }}><Box sx={css.Year}>2019 - 2021</Box></Grid>
-
-                    <Grid size={{ md: 6 }}>
-                        <Box sx={css.Title}>Web Developer · South Dakota State University</Box>
-                        <Box sx={css.Text}>Worked with the development team to build and maintain websites and web applications for the school</Box>
-                        <Box sx={{ marginTop: '5px' }}>
-                            <Chip label="Html & Css" color="warning" sx={css.Chip}/>
-                            <Chip label="Sql" color="warning" sx={css.Chip}/>
-                            <Chip label="Asp.net" color="warning" sx={css.Chip}/>
-                            <Chip label="C#" color="warning" sx={css.Chip}/>    
-                        </Box>
-                    </Grid>
-                </Grid>
-
-                <Grid container spacing={2} sx={{ marginTop: '40px' }}>
+                <Grid container spacing={2} >
                     <Grid size={{ md: 3 }}><Box sx={css.Year}>2021 - PRESENT</Box></Grid> 
 
                     <Grid size={{ md: 6 }}>
@@ -58,6 +43,21 @@ function About () {
                         </Box>
                     </Grid>
                 </Grid>
+
+                <Grid container spacing={2} sx={{ marginTop: '40px' }}>
+                    <Grid size={{ md: 3 }}><Box sx={css.Year}>2019 - 2021</Box></Grid>
+
+                    <Grid size={{ md: 6 }}>
+                        <Box sx={css.Title}>Web Developer · South Dakota State University</Box>
+                        <Box sx={css.Text}>Worked with the development team to build and maintain websites and web applications for the school</Box>
+                        <Box sx={{ marginTop: '5px' }}>
+                            <Chip label="Html & Css" color="warning" sx={css.Chip}/>
+                            <Chip label="Sql" color="warning" sx={css.Chip}/>
+                            <Chip label="Asp.net" color="warning" sx={css.Chip}/>
+                            <Chip label="C#" color="warning" sx={css.Chip}/>    
+                        </Box>
+                    </Grid>
+                </Grid>                
 
                 {/* interest section */}
                 <Box sx={{ ...css.Headers, marginTop: '40px' }}>INTERESTS</Box>

@@ -15,7 +15,9 @@ function Header () {
               <ListItemText>
                 <Link to="/" style={css.Button}>Home</Link>
               </ListItemText>
-              <ListItemText primary="Projects" sx={css.Button} />
+              <ListItemText>
+                <Link to="/projects" style={css.Button}>Projects</Link>
+              </ListItemText>  
               <ListItemText >
                 <Link to="/about" style={css.Button}>About</Link>
               </ListItemText>
