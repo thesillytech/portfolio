@@ -55,7 +55,6 @@ function About () {
                             <Chip label="React" color="warning" sx={css.Chip}/>    
                             <Chip label="Next.js" color="warning" sx={css.Chip}/>    
                             <Chip label="Node.js" color="warning" sx={css.Chip}/>    
-                            <Chip label="m-Power" color="warning" sx={css.Chip}/>
                         </Box>
                     </Grid>
                 </Grid>
