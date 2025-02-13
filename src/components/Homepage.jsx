@@ -11,7 +11,7 @@ function Homepage () {
             </Grid>
 
             <Grid size="auto" sx={css.subintro}>
-                <Box>I craft simple, design-driven web experiences with modern technologies.</Box>
+                <Box>I'm focused on crafting simple, design-driven web experiences with modern technologies.</Box>
             </Grid>
         </>
     )
