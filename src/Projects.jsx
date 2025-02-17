@@ -9,8 +9,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom'
 
-import Chip from '@mui/material/Chip';
 
 function Projects () {
     return (
@@ -20,27 +20,40 @@ function Projects () {
             <Grid size="auto" sx={css.Projects}>
                 <Paper elevation={24} sx={css.Paper}> 
                     <Box sx={css.Headers}>PROJECTS</Box>
+
+                    {/* Portfolio */}
+                    <Grid container spacing={3} sx={{ marginBottom: '10px' }}>
+                        <Grid>
+                            <img src="./src/assets/portfolio.png" style={css.Img}></img>
+                        </Grid>
+                        <Grid>
+                            <Box sx={{ marginTop: '-10px', color: '#c3c39a'}}>Portfolio</Box>
+                            <Box sx={{ fontSize: '20px' }}>Portfolio Website built with Vite and React</Box>
+                            <Box> 
+                                <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-github-logo"></i>Source</Link>
+                                <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-browser"></i>Live</Link>
+                            </Box>
+                        </Grid>
+                    </Grid>
+
+                    {/* <Box sx={{ borderBottom: '1px solid #c3c39a' }}></Box> */}
+
+                    <Grid container spacing={3} sx={{ marginTop: '25px'}}>
+                        <Grid>
+                            <img src="./src/assets/portfolio.png" style={css.Img}></img>
+                        </Grid>
+                        <Grid>
+                            <Box sx={{ marginTop: '-10px', color: '#c3c39a'}}>Portfolio</Box>
+                            <Box sx={{ fontSize: '20px' }}>Portfolio Website built with Vite and React</Box>
+                            <Box> 
+                                <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-github-logo"></i>Source</Link>
+                                <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-browser"></i>Live</Link>
+                            </Box>
+                        </Grid>
+                    </Grid>
                     
-                    <Card sx={{ maxWidth: 345 }}>
-                        <CardMedia
-                            sx={{ height: 140 }}
-                            image="./src/assets/portfolio.png"
-                            title="portfolio"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                            Lizard
-                            </Typography>
-                            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                            species, ranging across all continents except Antarctica
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Share</Button>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
-                    </Card>
+                   
+                    
                 </Paper>
 
             </Grid>
@@ -77,5 +90,26 @@ const css = {
         fontSize: '25px',
         fontWeight: '400',
         marginBottom: '20px'
+    },
+
+    cardb : {
+        background: '#242424', 
+        color: '#fff', 
+    },
+
+    Button: {
+        color: '#4d4d33',
+    },
+
+    Img: {
+        width: '280px',
+        height: '150px',
+        border: '1px solid #c3c39a'
+    },
+
+    Link: {
+        color: '#c3c39a',
+        fontSize: '20px',
+        marginRight: '20px'
     },
 }

@@ -143,7 +143,6 @@ const css = {
     Year: {
         color: '#c3c39a',
         fontSize: '20px',
-        // marginTop: '10px',
         fontWeight: '400',
     }, 
 
