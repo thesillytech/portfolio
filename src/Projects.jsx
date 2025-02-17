@@ -46,10 +46,7 @@ function Projects () {
                         </Grid>
                     </Grid>
                     
-                   
-                    
                 </Paper>
-
             </Grid>
 
         </Container>
@@ -64,7 +61,7 @@ const css = {
           padding: '0px'
         },
         fontSize: '30px'
-      }, 
+    }, 
 
     Projects: {
     '@media screen and (max-width: 600px)': {

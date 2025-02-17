@@ -18,10 +18,12 @@ function Header () {
               <ListItemText>
                 <Link to="/projects" style={css.Button}>Projects</Link>
               </ListItemText>  
-              <ListItemText >
+              <ListItemText>
                 <Link to="/about" style={css.Button}>About</Link>
               </ListItemText>
-              <ListItemText primary="Contact" sx={css.Button}/>
+              <ListItemText>  
+                <Link to="/contact" style={css.Button}>Contact</Link>
+              </ListItemText>
               <ListItemText><Box sx={css.line}></Box></ListItemText>
             </ListItemButton>
           </ListItem>

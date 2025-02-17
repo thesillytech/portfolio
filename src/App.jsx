@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route  } from "react-router-dom"
 import About from './about.jsx'
 import Home from './Home.jsx'
 import Projects from "./Projects.jsx"
+import Contact from "./Contact.jsx"
 
 
 function App () {
@@ -11,6 +12,7 @@ function App () {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
     </Router>
     )

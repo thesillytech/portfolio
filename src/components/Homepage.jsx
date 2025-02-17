@@ -4,6 +4,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom'
+import resume from '../assets/resume/Resume.pdf'
 
 function Homepage () {
     return (
@@ -20,7 +21,7 @@ function Homepage () {
             <Grid size="auto" sx={css.subintro}>
                 <Stack direction="row" spacing={3} sx={css.ButtonStack}>
                     <Link to="/projects" style={{ color: '#c3c39a'}}><Button variant="outlined" size="large" sx={css.Button} startIcon={<i className="ph-light ph-folder-simple"></i>}>My Work</Button></Link>
-                    <Link to="/projects" path_to_file="" style={{ color: '#c3c39a'}}><Button variant="outlined" size="large" sx={css.Button} startIcon={<i className="ph-light ph-read-cv-logo"></i>}>View Resume</Button></Link>
+                    <a href={resume} download="resume.pdf" style={{ color: '#c3c39a'}}><Button variant="outlined" size="large" sx={css.Button} startIcon={<i className="ph-light ph-read-cv-logo"></i>}>View Resume</Button></a>
                 </Stack>
             </Grid>
         </>
