@@ -83,11 +83,6 @@ const css = {
         marginBottom: '20px'
     },
 
-    cardb : {
-        background: '#242424', 
-        color: '#fff', 
-    },
-
     Button: {
         color: '#4d4d33',
     },

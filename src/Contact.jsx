@@ -4,6 +4,11 @@ import Header from './components/Header'
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid2';
 import { Link } from 'react-router-dom'
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
 
 function Contact () {
     return (
@@ -13,7 +18,22 @@ function Contact () {
             <Grid size="auto" sx={css.Contact}>
                 <Paper elevation={24} sx={css.Paper}> 
                     <Box sx={css.Headers}>CONTACT ME</Box>
-
+                    <Box sx={{ ...css.Text, marginBottom: '20px' }}>You can reach me at khamkarsanil@gmail.com</Box>
+                    <Box sx={css.Text}>Other Platforms where you can find me:</Box>
+                    <Box sx={css.Text}>
+                        <List>
+                            <ListItem disablePadding>
+                                <ListItemButton>
+                                    <ListItemText primary="Inbox" />
+                                </ListItemButton>
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemButton>
+                                    <ListItemText primary="Drafts" />
+                                </ListItemButton>
+                            </ListItem>
+                        </List>
+                    </Box>
                 </Paper>
             </Grid>
         </Container>
@@ -48,5 +68,15 @@ const css = {
         fontSize: '25px',
         fontWeight: '400',
         marginBottom: '20px'
+    },
+
+    Text: {
+        fontSize: '20px'
+    },
+
+    Link: {
+        color: '#c3c39a',
+        fontSize: '20px',
+        marginRight: '20px'
     },
 }
