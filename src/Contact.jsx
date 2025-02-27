@@ -8,7 +8,6 @@ import ListItemText from '@mui/material/ListItemText';
 import React, { useState } from 'react';
 import ContactModal from './components/ContactModal';
 
-
 function Contact () {
 
     const [isModalOpen, setModalOpen] = useState(false);
@@ -21,7 +20,9 @@ function Contact () {
             <Grid size="auto" sx={css.Contact}>
                 <Paper elevation={24} sx={css.Paper}> 
                     <Box sx={css.Headers}>CONTACT ME</Box>
-                    <Box sx={{ ...css.Text, marginBottom: '20px' }}>You can reach me at <Link onClick={handleOpen} style={css.ModalButton}>khamkarsanil@gmail.com <i className="ph-light ph-link-simple-horizontal"></i></Link></Box>
+                    <Box sx={{ ...css.Text, marginBottom: '20px' }}>
+                        You can reach me at <Link onClick={handleOpen} style={css.ModalButton}>khamkarsanil@gmail.com <i className="ph-light ph-link-simple"></i></Link>
+                    </Box>
                     <Box sx={css.Text}>Other Platforms where you can find me:</Box>
                     <Box sx={{ marginTop: '20px'}}>
                         <ListItemText>
