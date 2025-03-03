@@ -63,9 +63,7 @@ const css = {
     Button: {
         color: '#c3c39a',
         border: '1px solid #c3c39a',
-        '&.MuiButtonBase-root': {
-            textTransform: 'initial'
-        },
+        textTransform: 'initial',
         '&:hover': {
             background: '#c3c39a', 
             color: '#4d4d33', 

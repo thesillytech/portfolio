@@ -6,14 +6,8 @@ import Grid from '@mui/material/Grid2';
 import { Link } from 'react-router-dom'
 import ListItemText from '@mui/material/ListItemText';
 import React, { useState } from 'react';
-import ContactModal from './components/ContactModal';
 
 function Contact () {
-
-    const [isModalOpen, setModalOpen] = useState(false);
-    const handleOpen = () => setModalOpen(true);
-    const handleClose = () => setModalOpen(false);
-
     return (
         <Container maxWidth="lg" sx={css.Container}>
             <Header />
@@ -21,7 +15,7 @@ function Contact () {
                 <Paper elevation={24} sx={css.Paper}> 
                     <Box sx={css.Headers}>CONTACT ME</Box>
                     <Box sx={{ ...css.Text, marginBottom: '20px' }}>
-                        You can reach me at <Link onClick={handleOpen} style={css.ModalButton}>khamkarsanil@gmail.com <i className="ph-light ph-link-simple"></i></Link>
+                        You can reach me at <span style={css.Email}>khamkarsanil@gmail.com</span>
                     </Box>
                     <Box sx={css.Text}>Other Platforms where you can find me:</Box>
                     <Box sx={{ marginTop: '20px'}}>
@@ -36,9 +30,6 @@ function Contact () {
                     </Box>
                 </Paper>
             </Grid>
-
-            {/* ContactModal */}
-            <ContactModal isOpen={isModalOpen} isClose={handleClose} />
         </Container>
     )
 }
@@ -84,7 +75,7 @@ const css = {
         marginRight: '4px'
     },
 
-    ModalButton: {
+    Email: {
         color: '#c3c39a',
     }
 }
