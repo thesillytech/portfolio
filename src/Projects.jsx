@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid2';
 import { Link } from 'react-router-dom'
+import image from '
 
 function Projects () {
     return (
@@ -17,7 +18,7 @@ function Projects () {
                     {/* Portfolio */}
                     <Grid container spacing={3} sx={{ marginBottom: '10px' }}>
                         <Grid>
-                            <img src="../../public/assets/portfolio.png" style={css.Img}></img>
+                            <img src="../public/assets/portfolio.png" style={css.Img}></img>
                         </Grid>
                         <Grid>
                             <Box sx={{ marginTop: '-10px', color: '#c3c39a'}}>Portfolio</Box>
