@@ -4,7 +4,7 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { Link } from 'react-router-dom'
-import resume from '../../public/assets/resume/Resume.pdf'
+import resume from '/assets/resume/Resume.pdf'
 
 function Homepage () {
     return (
@@ -51,7 +51,7 @@ const css = {
             fontSize: '25px',
             padding: '15px'
         }
-    }, 
+    },
 
     ButtonStack: {
         marginTop: '30px',
@@ -65,12 +65,12 @@ const css = {
         border: '1px solid #c3c39a',
         textTransform: 'initial',
         '&:hover': {
-            background: '#c3c39a', 
-            color: '#4d4d33', 
-            fontWeight: '500', 
-            boxShadow: '0 0 3px #c3c39a, 0 0 3px #c3c39a', 
-            borderColor: '#c3c39a', 
+            background: '#c3c39a',
+            color: '#4d4d33',
+            fontWeight: '500',
+            boxShadow: '0 0 3px #c3c39a, 0 0 3px #c3c39a',
+            borderColor: '#c3c39a',
         }
     }
-    
+
 }
