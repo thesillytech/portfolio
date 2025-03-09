@@ -11,18 +11,18 @@ function Projects () {
             <Header />
 
             <Grid size="auto" sx={css.Projects}>
-                <Paper elevation={24} sx={css.Paper}> 
+                <Paper elevation={24} sx={css.Paper}>
                     <Box sx={css.Headers}>PROJECTS</Box>
 
                     {/* Portfolio */}
                     <Grid container spacing={3} sx={{ marginBottom: '10px' }}>
                         <Grid>
-                            <img src="/src/assets/portfolio.png" style={css.Img}></img>
+                            <img src="/assets/portfolio.png" style={css.Img}></img>
                         </Grid>
                         <Grid>
                             <Box sx={{ marginTop: '-10px', color: '#c3c39a'}}>Portfolio</Box>
                             <Box sx={{ fontSize: '20px' }}>Portfolio Website built with Vite and React</Box>
-                            <Box> 
+                            <Box>
                                 <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-github-logo"></i>Source</Link>
                                 <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-browser"></i>Live</Link>
                             </Box>
@@ -38,13 +38,13 @@ function Projects () {
                         <Grid>
                             <Box sx={{ marginTop: '-10px', color: '#c3c39a'}}>Portfolio</Box>
                             <Box sx={{ fontSize: '20px' }}>Portfolio Website built with Vite and React</Box>
-                            <Box> 
+                            <Box>
                                 <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-github-logo"></i>Source</Link>
                                 <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-browser"></i>Live</Link>
                             </Box>
                         </Grid>
                     </Grid> */}
-                    
+
                 </Paper>
             </Grid>
 
@@ -60,7 +60,7 @@ const css = {
           padding: '0px'
         },
         fontSize: '30px'
-    }, 
+    },
 
     Projects: {
     '@media screen and (max-width: 600px)': {
@@ -73,7 +73,7 @@ const css = {
         background: '#242424',
         color: '#fff',
         padding: '20px'
-    }, 
+    },
 
     Headers: {
         color: '#c3c39a',
