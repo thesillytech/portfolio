@@ -11,7 +11,7 @@ function About () {
         <Header />
 
         <Grid size="auto" sx={css.About}>
-            <Paper elevation={24} sx={css.Paper}> 
+            <Paper elevation={24} sx={css.Paper}>
 
                 {/* about section */}
                 <Box sx={css.Headers}>ABOUT</Box>
@@ -27,7 +27,7 @@ function About () {
                 <Box sx={{ ...css.Headers, marginTop: '40px' }}>EXPERIENCE</Box>
 
                 <Grid container spacing={2} >
-                    <Grid size={{ md: 3 }}><Box sx={css.Year}>2021 - PRESENT</Box></Grid> 
+                    <Grid size={{ md: 3 }}><Box sx={css.Year}>2021 - PRESENT</Box></Grid>
 
                     <Grid size={{ md: 6 }}>
                         <Box sx={css.Title}>Web Developer · JDS Industries </Box>
@@ -36,10 +36,10 @@ function About () {
                             <Chip label="Html & Css" color="warning" sx={css.Chip}/>
                             <Chip label="Sql" color="warning" sx={css.Chip}/>
                             <Chip label="Php" color="warning" sx={css.Chip}/>
-                            <Chip label="Javascript" color="warning" sx={css.Chip}/>  
-                            <Chip label="React" color="warning" sx={css.Chip}/>    
-                            <Chip label="Next.js" color="warning" sx={css.Chip}/>    
-                            <Chip label="Node.js" color="warning" sx={css.Chip}/>    
+                            <Chip label="Javascript" color="warning" sx={css.Chip}/>
+                            <Chip label="React" color="warning" sx={css.Chip}/>
+                            <Chip label="Next.js" color="warning" sx={css.Chip}/>
+                            <Chip label="Node.js" color="warning" sx={css.Chip}/>
                         </Box>
                     </Grid>
                 </Grid>
@@ -54,10 +54,10 @@ function About () {
                             <Chip label="Html & Css" color="warning" sx={css.Chip}/>
                             <Chip label="Sql" color="warning" sx={css.Chip}/>
                             <Chip label="Asp.net" color="warning" sx={css.Chip}/>
-                            <Chip label="C#" color="warning" sx={css.Chip}/>    
+                            <Chip label="C#" color="warning" sx={css.Chip}/>
                         </Box>
                     </Grid>
-                </Grid>                
+                </Grid>
 
                 {/* interest section */}
                 <Box sx={{ ...css.Headers, marginTop: '40px' }}>INTERESTS</Box>
@@ -79,7 +79,6 @@ function About () {
                         <Box sx={css.Year}>Gaming</Box>
                         <Box sx={css.Text}>Counter-Strike 2</Box>
                         <Box sx={css.Text}>God of War</Box>
-                        <Box sx={css.Text}>Uncharted Series</Box>
                     </Grid>
 
                     <Grid size={{ xs: 6, s: 3, md: 3 }}>
@@ -103,7 +102,7 @@ const css = {
         padding: '0px'
       },
       fontSize: '30px'
-    }, 
+    },
 
     About: {
         '@media screen and (max-width: 600px)': {
@@ -116,7 +115,7 @@ const css = {
         background: '#242424',
         color: '#fff',
         padding: '20px'
-    }, 
+    },
 
     Headers: {
         color: '#c3c39a',
@@ -133,26 +132,26 @@ const css = {
 
     Text: {
         fontSize: '20px',
-    }, 
+    },
 
     Highlight: {
         color: '#c3c39a',
         fontWeight: '400',
-    }, 
+    },
 
     Year: {
         color: '#c3c39a',
         fontSize: '20px',
         fontWeight: '400',
-    }, 
+    },
 
     Chip: {
-        background: '#c3c39a', 
-        color: '#4d4d33', 
-        fontWeight: '500', 
-        boxShadow: '0 0 3px #c3c39a, 0 0 3px #c3c39a', 
-        border: '1px solid #c3c39a', 
-        borderRadius: '16px', 
+        background: '#c3c39a',
+        color: '#4d4d33',
+        fontWeight: '500',
+        boxShadow: '0 0 3px #c3c39a, 0 0 3px #c3c39a',
+        border: '1px solid #c3c39a',
+        borderRadius: '16px',
         marginRight: '10px'
     }
   }
