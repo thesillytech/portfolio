@@ -23,27 +23,26 @@ function Projects () {
                             <Box sx={{ marginTop: '-10px', color: '#c3c39a'}}>Portfolio</Box>
                             <Box sx={{ fontSize: '20px' }}>Portfolio Website built with Vite and React</Box>
                             <Box>
-                                <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-github-logo"></i>Source</Link>
+                                <Link to="https://github.com/thesillytech/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-github-logo"></i>Source</Link>
                                 <Link to="https://sanilk.com" style={css.Link} target="_blank"><i className="ph-light ph-browser"></i>Live</Link>
                             </Box>
                         </Grid>
                     </Grid>
 
-                    {/* <Box sx={{ borderBottom: '1px solid #c3c39a' }}></Box> */}
+                    <Box sx={{ borderBottom: '1px solid #c3c39a' }}></Box> 
 
-                    {/* <Grid container spacing={3} sx={{ marginTop: '25px'}}>
+                    <Grid container spacing={3} sx={{ marginTop: '25px'}}>
                         <Grid>
-                            <img src="./src/assets/portfolio.png" style={css.Img}></img>
+                            <img src="/assets/blog.png" style={css.Img}></img>
                         </Grid>
                         <Grid>
-                            <Box sx={{ marginTop: '-10px', color: '#c3c39a'}}>Portfolio</Box>
-                            <Box sx={{ fontSize: '20px' }}>Portfolio Website built with Vite and React</Box>
+                            <Box sx={{ marginTop: '-10px', color: '#c3c39a'}}>Blog</Box>
+                            <Box sx={{ fontSize: '20px' }}>Creating a Blog to publish articles. Built with React and Nextjs</Box>
                             <Box>
-                                <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-github-logo"></i>Source</Link>
-                                <Link to="https://github.com/SanilKhamkar/portfolio" style={css.Link} target="_blank"><i className="ph-light ph-browser"></i>Live</Link>
+                                <Link to="https://github.com/thesillytech/machinebyte" style={css.Link} target="_blank"><i className="ph-light ph-github-logo"></i>Source</Link>
                             </Box>
                         </Grid>
-                    </Grid> */}
+                    </Grid>
 
                 </Paper>
             </Grid>
