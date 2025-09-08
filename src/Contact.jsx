@@ -20,7 +20,7 @@ function Contact () {
                     <Box sx={css.Text}>Other Platforms where you can find me:</Box>
                     <Box sx={{ marginTop: '20px'}}>
                         <ListItemText>
-                            <Link to="https://github.com/SanilKhamkar" style={css.Link} target="_blank">
+                            <Link to="https://github.com/thesillytech" style={css.Link} target="_blank">
                             <i className="ph-light ph-github-logo" style={css.Link}></i>Github</Link>
                         </ListItemText>
                         <ListItemText>
